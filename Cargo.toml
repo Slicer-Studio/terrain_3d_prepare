@@ -1,0 +1,19 @@
+[package]
+name = "terrain_3d_prepare"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+eframe = "0.30.0"
+egui = "0.30.0"
+egui_extras = "0.30.0"
+image = "0.25.5"
+image_dds = "0.6.2"
+rayon = "1.10.0"
+rfd = "0.15.2"
+
+[profile.release]
+lto = true
+codegen-units = 1
+opt-level = 3
+debug = false
